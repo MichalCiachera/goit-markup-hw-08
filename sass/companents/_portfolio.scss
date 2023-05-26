@@ -1,0 +1,14 @@
+.section-portfolio {
+  &--box {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &__container-btn-filters {
+    display: flex;
+    justify-content: space-between;
+    width: 572px;
+    margin: 0;
+    margin-left: 295px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.section-footer {
+  &--box {
+    background-color: map-get($map: $colors, $key: footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.social-footer {
+  &--box {
+    padding-top: 12px;
+  }
+  &__title {
+    font-weight: map-get($map: $font, $key: Bold);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: map-get($map: $colors, $key: social-footer_font);
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}

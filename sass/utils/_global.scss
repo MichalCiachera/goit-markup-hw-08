@@ -1,0 +1,53 @@
+body {
+  text-decoration: none;
+  font-family: map-get($map: $font, $key: Roboto), sans-serif;
+  font-weight: map-get($map: $font, $key: Regular);
+  font-style: normal;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  &--page-menu {
+    display: flex;
+    padding-top: 24px;
+    justify-content: space-between;
+  }
+  &--footer {
+    display: flex;
+    gap: 70px;
+  }
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: map-get($map: $colors, $key: title);
+  margin: 0;
+  text-align: center;
+
+  &__modal {
+    display: inline-flex;
+    justify-content: center;
+    width: 448px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: map-get($map: $font, $key: Bold);
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
+}
+
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

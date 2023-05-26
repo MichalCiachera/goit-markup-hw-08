@@ -1,0 +1,94 @@
+.btn {
+  background-color: map-get($map: $colors, $key: btn_background);
+  color: map-get($map: $colors, $key: btn_font);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0px;
+  border-style: none;
+
+  &--footer {
+    display: flex;
+    box-shadow: 0px 4px 4px map-get($map: $colors, $key: btn_footer-box-shadow);
+    gap: 24px;
+    margin: 0;
+    padding: 10px 28px 10px 42px;
+  }
+
+  &__text {
+    margin: 0;
+    color: map-get($map: $colors, $key: btn_footer-font);
+    font-weight: map-get($map: $font, $key: Bold);
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  }
+
+  &__svg {
+    margin-top: 3px;
+    fill: map-get($map: $colors, $key: btn_footer-svg-fill);
+  }
+
+  &--close {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid map-get($map: $colors, $key: btn-modal_close-border);
+    border-radius: 50%;
+    background-color: map-get($map: $colors, $key: btn-modal_close-background);
+    fill: map-get($map: $colors, $key: btn-modal_close-fill);
+  }
+
+  &__svg--close {
+    position: absolute;
+    top: 5.2px;
+    left: 5.2px;
+    margin: 0;
+    fill: map-get($map: $colors, $key: btn-modal_svg-close);
+  }
+
+  &--modal {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    padding: 10px 76px;
+    box-shadow: 0px 4px 4px map-get($map: $colors, $key: btn-modal__box-shadow);
+  }
+
+  &--filters {
+    background-color: map-get($map: $colors, $key: btn-portfolio_background);
+    color: map-get($map: $colors, $key: btn-portfolio_font);
+    font-family: map-get($map: $font, $key: Roboto), sans-serif;
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: map-get($map: $font, $key: Medium);
+    letter-spacing: 0.03em;
+    padding: 6px 22px 6px 22px;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: map-get($map: $transition, $key: duration-one);
+    transition-timing-function: map-get(
+      $map: $transition,
+      $key: timing-function-one
+    );
+  }
+
+  &--filters:hover,
+  &--filters:focus {
+    background-color: map-get(
+      $map: $colors,
+      $key: btn-portfolio_background-hover-focus
+    );
+    color: map-get($map: $colors, $key: btn-portfolio_font-hover-focus);
+    box-shadow: 0px 3px 1px
+        map-get($map: $colors, $key: btn-portfolio_box-shadow-one),
+      0px 1px 2px map-get($map: $colors, $key: btn-portfolio_box-shadow-two),
+      0px 2px 2px map-get($map: $colors, $key: btn-portfolio_box-shadow-three);
+    border-style: none;
+  }
+}

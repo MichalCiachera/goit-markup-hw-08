@@ -1,0 +1,47 @@
+.section-our-customers {
+  &--box {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  &__logo {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid map-get($map: $colors, $key: customers_logo-border);
+    border-radius: 4px;
+    fill: map-get($map: $colors, $key: customers_logo-fill);
+    transition-property: border, border-radius, fill;
+    transition-duration: map-get($map: $transition, $key: duration-one);
+    transition-timing-function: map-get(
+      $map: $transition,
+      $key: timing-function-one
+    );
+  }
+  &__logo:hover {
+    border: 1px solid
+      map-get($map: $colors, $key: customers_logo-border-hover-focus);
+    border-radius: 4px;
+    fill: map-get($map: $colors, $key: customers_logo-fill-hover-focus);
+    outline: none;
+  }
+  &__logo:focus {
+    border: 1px solid
+      map-get($map: $colors, $key: customers_logo-border-hover-focus);
+    border-radius: 4px;
+    fill: map-get($map: $colors, $key: customers_logo-fill-hover-focus);
+    outline: none;
+  }
+}

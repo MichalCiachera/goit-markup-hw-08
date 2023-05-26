@@ -1,0 +1,28 @@
+.cart {
+  &--team {
+    display: inline-block;
+    background-color: map-get($map: $colors, $key: cart_background);
+    box-shadow: 0px 1px 3px map-get($map: $colors, $key: cart_box-shadow-one),
+      0px 1px 1px map-get($map: $colors, $key: cart_box-shadow-two),
+      0px 2px 1px map-get($map: $colors, $key: cart_box-shadow-three);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__img {
+    margin: 0;
+  }
+  &__text-box {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  &__header {
+    font-weight: map-get($map: $font, $key: Medium);
+    color: map-get($map: $colors, $key: cart_header-font);
+    text-align: center;
+  }
+  &__text {
+    font-weight: map-get($map: $font, $key: Regular);
+    color: map-get($map: $colors, $key: cart_text-font);
+    text-align: center;
+  }
+}

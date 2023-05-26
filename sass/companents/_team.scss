@@ -1,0 +1,15 @@
+.section-our-team {
+  &--box {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: map-get($map: $colors, $key: team_background);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+  }
+}

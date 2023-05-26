@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="menu menu--menu-styles">
+      <div class="container container--page-menu">
+        <div class="nav-panel nav-panel--header">
+          <div class="logo logo--menu">
+            <a class="logo__link" href="#"
+              ><span class="logo__label">Web</span>Studio</a
+            >
+          </div>
+          <nav class="nav nav--nav-styles">
+            <ul class="nav__list">
+              <li>
+                <a href="./index.html" class="nav__link">Agencja</a>
+              </li>
+              <li>
+                <a
+                  href="./portfolio.html"
+                  class="nav__link nav__link--underline"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav__link">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contact contact--menu">
+          <div class="contact__mail-tel contact__mail-tel--menu">
+            <svg class="contact__envelope" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            <a
+              class="contact__link contact__link--menu"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </div>
+          <div class="contact__mail-tel contact__mail-tel--menu">
+            <svg class="contact__smartphone" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a
+              class="contact__link contact__link--menu"
+              href="tel:+48111111111"
+            >
+              +48 111 111 111</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-portfolio section-portfolio--box">
+        <div class="container">
+          <!-- Przyciski filtrów -->
+          <ul class="section-portfolio__container-btn-filters">
+            <li>
+              <button class="btn btn--filters" type="button">Wszystkie</button>
+            </li>
+            <li>
+              <button class="btn btn--filters" type="button">Strony</button>
+            </li>
+            <li>
+              <button class="btn btn--filters" type="button">Aplikacje</button>
+            </li>
+            <li>
+              <button class="btn btn--filters" type="button">Dizajn</button>
+            </li>
+            <li>
+              <button class="btn btn--filters" type="button">Marketing</button>
+            </li>
+          </ul>
+          <!-- Projekty -->
+          <ul class="projects projects--box">
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/technocrack.img.jpg"
+                    alt="Strona internetowa"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Technocrack</p>
+                  <p class="projects__text">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/graphics_new_orlean_vs_golden_star.img.jpg"
+                    alt="Grafika New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">
+                    Grafika New Orlean vs Golden Star
+                  </p>
+                  <p class="projects__text">Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/restaurant_seafood.img.jpg"
+                    alt="Restauracja Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Restauracja Seafood</p>
+                  <p class="projects__text">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/project_prime.img.jpg"
+                    alt="Projekt Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Projekt Prime</p>
+                  <p class="projects__text">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/project_boxes.img.jpg"
+                    alt="Projekt Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Projekt Boxes</p>
+                  <p class="projects__text">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/inspiration_has_no_borders.img.jpg"
+                    alt="Inspirations has na Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Inspirations has na Borders</p>
+                  <p class="projects__text">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/magazine_limited_edition.img.jpg"
+                    alt="Magazyn Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Magazyn Limited Editoin</p>
+                  <p class="projects__text">Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/project_lab.img.jpg"
+                    alt="Projekt LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Projekt LAB</p>
+                  <p class="projects__text">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__box">
+              <figure class="projects__cart">
+                <div class="projects__img-box">
+                  <img
+                    class="projects__img"
+                    src="./images/growing_business.img.jpg"
+                    alt="Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="projects__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="projects__text-box">
+                  <p class="projects__header">Growing Business</p>
+                  <p class="projects__text">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="section-footer section-footer--box">
+      <div class="container container--footer">
+        <div class="contact contact--footer">
+          <div class="logo">
+            <a class="logo__link logo__link--footer" href="#"
+              ><span class="logo__label">Web</span>Studio</a
+            >
+          </div>
+          <div class="contact__address">
+            <address class="contact__address-text">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+          </div>
+          <div class="contact__item contact__item--footer">
+            <a
+              class="contact__link contact__link--footer"
+              href="mailto:info@example.com"
+            >
+              info@example.com</a
+            >
+          </div>
+          <div class="contact__item contact__item--footer">
+            <a
+              class="contact__link contact__link--footer"
+              href="tel:+48111111111"
+            >
+              +48 111 111 111</a
+            >
+          </div>
+        </div>
+        <div class="social-footer social-footer__title">
+          <p class="social-footer__title">DOŁĄCZ DO NAS</p>
+          <div class="social-links social-links--footer">
+            <a
+              class="social-links__icon social-links__icon--footer"
+              href="https://www.instagram.com/"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a
+              class="social-links__icon social-links__icon--footer"
+              href="https://twitter.com"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a
+              class="social-links__icon social-links__icon--footer"
+              href="https://www.facebook.com/"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a
+              class="social-links__icon social-links__icon--footer"
+              href="https://www.linkedin.com"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form class="newsletter">
+          <label for="user_email"
+            ><p class="newsletter__sign-up">ZAPISZ SIĘ DO NEWSLETTERA</p></label
+          >
+          <div class="newsletter__container-input">
+            <input
+              class="newsletter__input-footer"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="E-mail"
+            />
+            <button class="btn btn--footer" type="submit">
+              <p class="btn__text">Zapisz się</p>
+              <svg class="btn__svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

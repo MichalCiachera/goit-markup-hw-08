@@ -1,0 +1,60 @@
+.contact {
+  &--menu {
+    display: flex;
+    gap: 30px;
+    padding-top: 8px;
+    cursor: pointer;
+  }
+  &__link {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: map-get($map: $transition, $key: duration-one);
+    transition-timing-function: map-get(
+      $map: $transition,
+      $key: timing-function-one
+    );
+    color: map-get($map: $colors, $key: contact-menu_link);
+    font-weight: map-get($map: $font, $key: Medium);
+    fill: map-get($map: $colors, $key: contact-menu_link);
+  }
+  &__link:is(:hover, :focus) {
+    color: map-get($map: $colors, $key: contact-menu_link_focus_hover);
+    outline: none;
+    fill: map-get($map: $colors, $key: contact-menu_link_focus_hover);
+  }
+  &__item {
+    display: flex;
+    gap: 10px;
+  }
+  &__envelope {
+    margin-top: 2px;
+  }
+  &__address {
+    padding: 0;
+    padding-top: 20px;
+  }
+  &__address-text {
+    color: map-get($map: $colors, $key: contact-footer_address-font);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &__item--footer {
+    padding: 0;
+    padding-top: 9px;
+  }
+  &__link--footer {
+    color: map-get($map: $colors, $key: contact-footer_link);
+    font-weight: map-get($map: $font, $key: Regular);
+  }
+  &__link--footer:hover,
+  &__link--footer:focus {
+    color: map-get($map: $colors, $key: contact-footer_link-hover-focus);
+  }
+}

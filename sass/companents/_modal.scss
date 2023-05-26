@@ -1,0 +1,20 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: map-get($map: $colors, $key: backdrop);
+  transition-duration: map-get($map: $transition, $key: duration-two);
+  transition-timing-function: map-get(
+    $map: $transition,
+    $key: timing-function-two
+  );
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0);
+}
