@@ -11,6 +11,11 @@
       0px 1px 1px map-get($map: $colors, $key: form-shadow-two),
       0px 2px 1px map-get($map: $colors, $key: form-shadow-three);
     border-radius: 4px;
+
+    @include mobile {
+      max-width: 450px;
+      max-height: 609px;
+    }
   }
   &__conteiner-inputs {
     margin-left: 40px;
@@ -38,6 +43,10 @@
       $map: $transition,
       $key: timing-function-one
     );
+
+    @include mobile {
+      max-width: 370px;
+    }
   }
   &__input-box:focus-within {
     border: 1px solid map-get($map: $colors, $key: form_input-box-focus-hover);
@@ -76,6 +85,10 @@
       $map: $transition,
       $key: timing-function-one
     );
+
+    @include mobile {
+      max-width: 370px;
+    }
   }
   &__textarea-box:focus-within {
     border: 1px solid

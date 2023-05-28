@@ -1,39 +1,55 @@
-.section-our-strengths {
-  &--box {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.strengths {
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 93px 0;
   }
+
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
     gap: 30px;
   }
+
   &__item {
-    display: inline-block;
+    flex-basis: 100%;
+
+    @include tablet {
+      min-width: 354px;
+      flex-basis: calc((100% - 30px) / 3);
+    }
+
+    @include desktop {
+      min-width: 270px;
+      flex-basis: calc((100% - 90px) / 5);
+    }
   }
+
   &__icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    padding-bottom: 30px;
     height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: map-get($map: $colors, $key: strengths_background-icon);
     border-radius: 4px;
   }
+
   &__title {
     font-weight: map-get($map: $font, $key: Bold);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: map-get($map: $colors, $key: strengths_font-title);
-    width: 270px;
-    padding: 0px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+
+    padding: 30px 0 10px;
     margin: 0;
+    text-align: center;
   }
+
   &__text {
     font-size: 14px;
     line-height: 1.71;

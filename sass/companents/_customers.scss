@@ -1,23 +1,48 @@
 .section-our-customers {
-  &--box {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   &__list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     margin-top: 50px;
     padding: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+
     gap: 30px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
+
+  &__item {
+    height: 92px;
+    min-width: 210px;
+
+    @include tablet {
+      height: 92px;
+      min-width: 226px;
+    }
+
+    @include desktop {
+      height: 92px;
+      min-width: 170px;
+    }
+  }
+
   &__logo {
     display: flex;
-    width: 170px;
-    height: 92px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     border: 1px solid map-get($map: $colors, $key: customers_logo-border);

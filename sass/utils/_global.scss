@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   text-decoration: none;
   font-family: map-get($map: $font, $key: Roboto), sans-serif;
@@ -10,18 +15,47 @@ ul {
   list-style-type: none;
 }
 
+svg {
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 480px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
-  &--page-menu {
-    display: flex;
-    padding-top: 24px;
-    justify-content: space-between;
-  }
+  padding: 0px 15px;
+
   &--footer {
     display: flex;
-    gap: 70px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    @include desktop {
+      gap: 70px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    flex-direction: row;
   }
 }
 
@@ -44,6 +78,11 @@ ul {
     font-weight: map-get($map: $font, $key: Bold);
     line-height: 1.15;
     letter-spacing: 0.03em;
+
+    @include mobile {
+      max-width: 360px;
+      text-align: center;
+    }
   }
 }
 

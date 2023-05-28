@@ -15,52 +15,56 @@
     />
   </head>
   <body>
-    <header class="menu menu--menu-styles">
-      <div class="container container--page-menu">
-        <div class="nav-panel nav-panel--header">
-          <div class="logo logo--menu">
-            <a class="logo__link" href="#"
-              ><span class="logo__label">Web</span>Studio</a
-            >
-          </div>
-          <nav class="nav nav--nav-styles">
-            <ul class="nav__list">
-              <li>
-                <a href="./index.html" class="nav__link">Agencja</a>
-              </li>
-              <li>
-                <a
-                  href="./portfolio.html"
-                  class="nav__link nav__link--underline"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a href="#" class="nav__link">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
+    <header class="menu">
+      <div class="container menu__container">
+        <div>
+          <a class="menu__logo-link" href="#"
+            ><span class="menu__logo-label">Web</span>Studio</a
+          >
         </div>
-        <div class="contact contact--menu">
-          <div class="contact__mail-tel contact__mail-tel--menu">
-            <svg class="contact__envelope" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            <a
-              class="contact__link contact__link--menu"
-              href="mailto:info@devstudio.com"
-            >
+        <button
+          type="button"
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__toggle-btn" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+
+        <nav class="menu__nav">
+          <ul class="menu__nav-list">
+            <li>
+              <a class="menu__nav-link" href="./index.html">Agencja</a>
+            </li>
+            <li>
+              <a
+                class="menu__nav-link menu__nav-link--underline"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="menu__nav-link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu__contact">
+          <div class="menu__contact-item">
+            <a class="menu__contact-link" href="mailto:info@devstudio.com">
+              <svg class="menu__contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
               info@devstudio.com</a
             >
           </div>
-          <div class="contact__mail-tel contact__mail-tel--menu">
-            <svg class="contact__smartphone" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            <a
-              class="contact__link contact__link--menu"
-              href="tel:+48111111111"
-            >
+          <div class="menu__contact">
+            <a class="menu__contact-link" href="tel:+48111111111">
+              <svg class="menu__contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
               +48 111 111 111</a
             >
           </div>
@@ -303,30 +307,30 @@
         </div>
       </section>
     </main>
-    <footer class="section-footer section-footer--box">
+    <footer class="footer footer--box">
       <div class="container container--footer">
         <div class="contact contact--footer">
-          <div class="logo">
-            <a class="logo__link logo__link--footer" href="#"
-              ><span class="logo__label">Web</span>Studio</a
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#"
+              ><span class="footer__logo-label">Web</span>Studio</a
             >
           </div>
-          <div class="contact__address">
-            <address class="contact__address-text">
+          <div class="footer__contact-address">
+            <address class="footer__address-text">
               m. Warszawa, Aleje Jerozolimskie 21
             </address>
           </div>
-          <div class="contact__item contact__item--footer">
+          <div class="footer__item footer__item--footer">
             <a
-              class="contact__link contact__link--footer"
+              class="footer__link footer__link--footer"
               href="mailto:info@example.com"
             >
               info@example.com</a
             >
           </div>
-          <div class="contact__item contact__item--footer">
+          <div class="footer__item footer__item--footer">
             <a
-              class="contact__link contact__link--footer"
+              class="footer__link footer__link--footer"
               href="tel:+48111111111"
             >
               +48 111 111 111</a
@@ -370,6 +374,7 @@
             </a>
           </div>
         </div>
+
         <form class="newsletter">
           <label for="user_email"
             ><p class="newsletter__sign-up">ZAPISZ SIĘ DO NEWSLETTERA</p></label

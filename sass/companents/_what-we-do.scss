@@ -1,7 +1,10 @@
 .section-what-we-do {
-  &--box {
-    padding-bottom: 94px;
+  display: none;
+  padding: 94px 0;
+  @include desktop {
+    display: flex;
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
