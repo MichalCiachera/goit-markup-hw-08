@@ -38,14 +38,10 @@ a {
   &--footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 60px;
 
     @include desktop {
       gap: 70px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
     }
   }
 
@@ -68,20 +64,21 @@ a {
   text-align: center;
 
   &__modal {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    width: 448px;
+    max-width: 448px;
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 12px;
     font-size: 20px;
     font-weight: map-get($map: $font, $key: Bold);
     line-height: 1.15;
     letter-spacing: 0.03em;
+    text-align: center;
 
     @include mobile {
-      max-width: 360px;
-      text-align: center;
+      min-width: 290px;
     }
   }
 }

@@ -1,64 +1,68 @@
 .hero {
   background-color: map-get($map: $colors, $key: hero_background);
 
-  &__container {
-    color: map-get($map: $colors, $key: section-header_font-header);
-    padding: 118px 0;
-    margin: 0 auto;
+  display: block;
+  color: map-get($map: $colors, $key: section-header_font-header);
+  padding: 118px 0;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      map-get($map: $colors, $key: section-header_linear-gradient-one),
+      map-get($map: $colors, $key: section-header_linear-gradient-two)
+    ),
+    url(../images/hero-mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid map-get($map: $colors, $key: section-header_border);
+  filter: drop-shadow(
+    0px 4px 4px map-get($map: $colors, $key: section-header_drop-shadow)
+  );
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        map-get($map: $colors, $key: section-header_linear-gradient-one),
+        map-get($map: $colors, $key: section-header_linear-gradient-two)
+      ),
+      url(../images/hero-mob@2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        map-get($map: $colors, $key: section-header_linear-gradient-one),
+        map-get($map: $colors, $key: section-header_linear-gradient-two)
+      ),
+      url(../images/hero-tab@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          map-get($map: $colors, $key: section-header_linear-gradient-one),
+          map-get($map: $colors, $key: section-header_linear-gradient-two)
+        ),
+        url(../images/hero-tab@2x.jpg);
+    }
+  }
+
+  @include desktop {
+    padding: 200px 0;
 
     background-image: linear-gradient(
         map-get($map: $colors, $key: section-header_linear-gradient-one),
         map-get($map: $colors, $key: section-header_linear-gradient-two)
       ),
-      url(../images/hero-mob@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: 1px solid map-get($map: $colors, $key: section-header_border);
-    filter: drop-shadow(
-      0px 4px 4px map-get($map: $colors, $key: section-header_drop-shadow)
-    );
+      url(../images/hero-desk@1x.jpg);
 
-    @include retina {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: linear-gradient(
           map-get($map: $colors, $key: section-header_linear-gradient-one),
           map-get($map: $colors, $key: section-header_linear-gradient-two)
         ),
-        url(../images/hero-mob@2x.jpg);
-    }
-
-    @include tablet {
-      background-image: linear-gradient(
-          map-get($map: $colors, $key: section-header_linear-gradient-one),
-          map-get($map: $colors, $key: section-header_linear-gradient-two)
-        ),
-        url(../images/hero-tab@1x.jpg);
-
-      @include retina {
-        background-image: linear-gradient(
-            map-get($map: $colors, $key: section-header_linear-gradient-one),
-            map-get($map: $colors, $key: section-header_linear-gradient-two)
-          ),
-          url(../images/hero-tab@2x.jpg);
-      }
-    }
-
-    @include desktop {
-      padding: 200px 0;
-
-      background-image: linear-gradient(
-          map-get($map: $colors, $key: section-header_linear-gradient-one),
-          map-get($map: $colors, $key: section-header_linear-gradient-two)
-        ),
-        url(../images/hero-desk@1x.jpg);
-
-      @include retina {
-        background-image: linear-gradient(
-            map-get($map: $colors, $key: section-header_linear-gradient-one),
-            map-get($map: $colors, $key: section-header_linear-gradient-two)
-          ),
-          url(../images/hero-desk@2x.jpg);
-      }
+        url(../images/hero-desk@2x.jpg);
     }
   }
 

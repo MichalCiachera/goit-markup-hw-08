@@ -5,10 +5,27 @@
     padding-bottom: 60px;
   }
 
+  &__box-tab {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    @include desktop {
+      gap: 70px;
+    }
+  }
+
   &__logo {
     display: flex;
     justify-content: center;
-    text-align: center;
+
+    @include desktop {
+      justify-content: flex-start;
+    }
   }
 
   &__logo-link {
@@ -34,7 +51,6 @@
   &__contact-address {
     padding: 0;
     padding-top: 20px;
-    text-align: center;
   }
 
   &__address-text {
@@ -52,6 +68,7 @@
     padding-top: 8px;
 
     @include desktop {
+      text-align: left;
       padding-top: 9px;
     }
   }
@@ -67,9 +84,12 @@
   }
 }
 .social-footer {
-  &--box {
-    padding-top: 12px;
+  padding-top: 60px;
+
+  @include tablet {
+    padding-top: 0;
   }
+
   &__title {
     text-align: center;
     font-weight: map-get($map: $font, $key: Bold);
@@ -79,6 +99,10 @@
     color: map-get($map: $colors, $key: social-footer_font);
     margin: 0px;
     margin-bottom: 20px;
+
+    @include desktop {
+      text-align: left;
+    }
   }
 }
 
@@ -92,10 +116,15 @@
     color: map-get($map: $colors, $key: newletter_sign-up-font);
     margin: 0px;
     margin-bottom: 25px;
+
+    @include desktop {
+      text-align: left;
+    }
   }
   &__container-input {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
 
     @include desktop {
@@ -104,8 +133,9 @@
   }
 
   &__input-footer {
-    padding: 15px 295px 15px 15px;
+    padding: 15px 0 15px 15px;
     color: map-get($map: $colors, $key: newletter_input-footer-font);
+    max-width: 450px;
     width: 100%;
     background-color: map-get(
       $map: $colors,
@@ -126,7 +156,7 @@
     outline: 0;
 
     @include desktop {
-      max-width: 358px;
+      min-width: 358px;
     }
   }
   &__input-footer::placeholder {
